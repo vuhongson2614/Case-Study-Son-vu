@@ -1,45 +1,32 @@
-<
-div class
+.top {
+    background-color: red;
+    width: 100%;
+    height: 200px;
+    background-image: url("http://danthehinh.com/wp-content/uploads/2016/08/gym-music.jpg");
+}
 
-=
-"midleft"
->
-< img src
+.mid {
+    background-color: aqua;
+    width: 100%;
+    height: 700px;
+}
 
-=
-"https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2020/03/iso-100-whey-protein-dymatize-5lbs-5e7429e80cd05-20032020092648.jpg"
-> < br >
-< button class
-
-=
-"buy"
-> BUY<
-
-/
-button >
-<
-
-/
-div >
-< div class
-
-=
-"midright"
->
-< img src
-
-=
-"https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2020/03/tang-suc-manh-pro-supps-mr-hyde-pre-workout-5e7424ae9497c-20032020090430.jpg"
-> < br >
-< button class
-
-=
-"buy"
-> BUY<
-
-/
-button >
-<
-
-/
-div >
+.bot {
+    background-color: #fcfff0;
+    width: 100%;
+    height: 200px;
+}
+#product {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+#products {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
