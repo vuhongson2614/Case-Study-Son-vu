@@ -1,101 +1,312 @@
-.top {
-    background-color: red;
-    width: 100%;
-    height: 200px;
-    background-image: url("http://danthehinh.com/wp-content/uploads/2016/08/gym-music.jpg");
-}
-
-.mid {
-    background-color: aqua;
-    width: 100%;
-    height: 700px;
-}
-
-.bot {
-    background-color: #fcfff0;
-    width: 100%;
-    height: 200px;
-}
-#product {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-}
-#products {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-}
-body{
-    width: 1300px;
-    height: auto;
-    margin: auto;
-    background: url("https://ae01.alicdn.com/kf/HTB1Jhi1X2vsK1Rjy0Fiq6zwtXXaU/custom-photo-3d-wallpaper-Personality-creative-beauty-collage-gym-background-living-room-home-improvement-wallpaper-for.jpg_q50.jpg");
-}
-header{
-    width: 300px;
-    height: 100px;
-    float: left;
-}
-nav{
-    width: 1000px;
-    height: 100px ;
-    float: left ;
-}
-section{
-    height: 500px;
-    width: 300px;
-    float: left;
-}
-article{
-    height: 500px;
-    width: 1000px;
-    float: left;
-}
-aside{
-    height: 300px;
-    float: left;
-    width: 1300px;
-
-}
-footer{
-    height: 50px;
-    width: 1300px;
-    float: left;
-    background-color: burlywood;
-}
-.logo{
-    margin-right: 30px;
-}
-ul{
-    border: none;
-    list-style-type: none;
-    margin: 0;
+.main {
     padding: 0;
+    margin: auto;
+    width: 1200px;
+    height: 1500px;
+
 }
-li{
-    display: inline;
-    float: right;
-    padding-right: 10px;
+
+.head {
+    height: 12%;
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
 }
-li button:hover{
-    background-color: chocolate;
+
+.head-link {
+    height: 5%;
+    width: 100%;
 }
-button{
-    display: block;
-    width: 100px;
-    height: 50px;
-    background-color: gold;
-}
-img{
-    width: 330px;
-    height: 500px;
+
+.left {
+    height: 70%;
+    width: 20%;
+
     float: left;
 }
-.product{
+
+.right {
+    height: 70%;
+    width: 80%;
     float: left;
+
+}
+
+.footer {
+    height: 15%;
+    width: 100%;
+    float: left;
+}
+
+h1 {
+    font-family: Algerian;
+    color: burlywood;
+    text-shadow: 0px 2px 3px green;
+}
+
+h3 {
+    font-size: 20px;
+    color: burlywood;
+    text-shadow: 0px 2px 3px green;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+
+    display: flex; /* so child elements can use flexbox stuff too! */
+}
+ul#menu-v, #menu-v ul
+{
+    width:200px; /* Main Menu width */
+    border:1px solid rgba(190,190,190,0.3);
+    list-style:none; margin:0; padding:0;
+    z-index:9;
+}
+
+#menu-v li
+{
+    margin:0;padding:0;
+    position:relative;
+    background-color:#DDDDDD; /*fallback color*/
+    background-color:rgba(0,0,0,0.5);
+    transition:background 0.5s;
+}
+#menu-v li:hover
+{
+    background-color:rgba(0,0,0,0.9);
+}
+
+#menu-v a
+{
+    font:normal 12px Arial;
+    border-top:1px solid rgba(190,190,190,0.3);
+    display:block;
+    color:#EEEEEE;
+    text-decoration:none;
+    line-height:30px;
+    padding-left:22px;
+    position:relative;
+}
+
+#menu-v li:first-child a
+{
+    border-top:0;
+}
+
+#menu-v a.arrow::after{
+    content:'';
+    position:absolute;
+    display:inline;
+    top:50%;
+    margin-top:-4px;
+    right:8px;
+    border-width:4px;
+    border-style:solid;
+    border-color:transparent transparent transparent white;
+    transition:border-color 0.5s;
+}
+
+#menu-v li a.arrow:hover::after
+{
+    border-color:transparent transparent transparent #CCCCCC;
+}
+
+#menu-v li ul
+{
+    min-width:180px;
+    position:absolute;
+    display:none;
+    left:100%;
+    top:50%; transform:translateY(-50%);
+}
+
+#menu-v li:hover > ul
+{
+    display:block;
+}
+.site-footer
+{
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+.site-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer hr.small
+{
+    margin:20px 0
+}
+.site-footer h6
+{
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+.site-footer a
+{
+    color:#737373;
+}
+.site-footer a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+.site-footer .social-icons
+{
+    text-align:right
+}
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+.copyright-text
+{
+    margin:0
+}
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+        margin-bottom:30px
+    }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+        padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+        text-align:center
+    }
+}
+.social-icons
+{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+.social-icons li
+{
+    display:inline-block;
+    margin-bottom:4px
+}
+.social-icons li.title
+{
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+.social-icons a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+    color:#fff;
+    background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+.social-icons a.facebook:hover
+{
+    background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+    background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+    background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+    background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+    .social-icons li.title
+    {
+        display:block;
+        margin-right:0;
+        font-weight:600
+    }
 }
