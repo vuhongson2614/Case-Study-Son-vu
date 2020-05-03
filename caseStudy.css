@@ -76,11 +76,11 @@ div.scrollmenu a:hover {
     flex-grow: 1;
     flex-basis: 16%;
 
-    display: flex; /* so child elements can use flexbox stuff too! */
+    display: flex;
 }
 ul#menu-v, #menu-v ul
 {
-    width:200px; /* Main Menu width */
+    width:200px;
     border:1px solid rgba(190,190,190,0.3);
     list-style:none; margin:0; padding:0;
     z-index:9;
@@ -90,7 +90,7 @@ ul#menu-v, #menu-v ul
 {
     margin:0;padding:0;
     position:relative;
-    background-color:#DDDDDD; /*fallback color*/
+    background-color:#DDDDDD;
     background-color:rgba(0,0,0,0.5);
     transition:background 0.5s;
 }
