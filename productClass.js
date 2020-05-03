@@ -1,42 +1,25 @@
 
 class product {
-    constructor(name,price , address ,phone , email ) {
+    constructor(name,amount , address ,phone , email ) {
         this.name = name;
-        this.price= price;
+        this.amount = amount;
         this.address = address;
         this.phone = phone ;
         this.email = email;
     }
-    get name() {
-        return this.name;
-    }
-    setName(name){
-        this.name=name;
-    }
-    get price () {
-        return this.price;
-    }
-    setPrice(price){
-        this.price = price;
-    }
-
-    get address (){
-        return this.address;
-    }
-    setAddress(address){
-        this.address = address;
-    }
-    get phone(){
-        return this.phone;
-    }
-    setPhone(phone){
-        this.phone = phone;
-    }
-    get email(){
-        return this.email;
-    }
-    setEmail(email){
-        this.email = email;
+    setID(id){
+        this.id = id;
     }
 }
-let Product = new product();
+getComputedStyle(){
+    let str = `<tr>
+<th>${this.name}</th>
+<th>${this.amount}</th>
+<th>${this.phone}</th>
+<th>${this.address}</th>
+<th>${this.email}</th>
+<th><button id="<button id="delete" onclick="deletel(${this.id});">Delete</button>"</th>
+</tr>
+    `;
+return str;
+}
