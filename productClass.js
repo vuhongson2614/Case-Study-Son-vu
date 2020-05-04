@@ -7,11 +7,11 @@ class product {
         this.phone = phone ;
         this.email = email;
     }
-    setID(id){
-        this.id = id;
+    setName(name){
+        this.name = name;
     }
 }
-getComputedStyle(){
+getHTML(){
     let str = `<tr>
 <th>${this.name}</th>
 <th>${this.amount}</th>
@@ -21,5 +21,4 @@ getComputedStyle(){
 <th><button id="<button id="delete" onclick="deletel(${this.id});">Delete</button>"</th>
 </tr>
     `;
-return str;
 }
