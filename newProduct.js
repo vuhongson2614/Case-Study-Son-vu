@@ -26,3 +26,5 @@ if (localStorage.getItem("id") !== null){
     }
 }
 }
+saveData();
+loadData();
