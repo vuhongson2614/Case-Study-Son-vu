@@ -1,4 +1,4 @@
-class productManage {
+class ProductManage {
     constructor() {
         this.products = [];
     }
@@ -13,7 +13,7 @@ class productManage {
             index++;
             product.setID(index);
             src += product.getCueAsHTML()
-        })
+        });
         document.getElementById("lish-addproduct").innerHTML = this.getTitle() + str;
     }
 
@@ -40,7 +40,7 @@ class productManage {
             product.setItem(index);
             str += product.getProduct();
             }
-        )
+        );
         document.getElementById("lish-addproduct").innerHTML = str;
     }
 }

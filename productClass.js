@@ -1,5 +1,5 @@
 
-class product {
+class Product {
     constructor(name,amount , address ,phone , email ) {
         this.name = name;
         this.amount = amount;
@@ -10,9 +10,8 @@ class product {
     setName(name){
         this.name = name;
     }
-}
-getHTML(){
-    let str = `<tr>
+    getHTML(){
+        let str = `<tr>
 <th>${this.name}</th>
 <th>${this.amount}</th>
 <th>${this.phone}</th>
@@ -21,4 +20,5 @@ getHTML(){
 <th><button id="<button id="delete" onclick="deletel(${this.id});">Delete</button>"</th>
 </tr>
     `;
+    }
 }
